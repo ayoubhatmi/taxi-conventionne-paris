@@ -1,0 +1,23 @@
+@import "../scss/_colors.module.scss";
+@import "../scss/_mixins.scss";
+
+.reservastionForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 1rem;
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+    color: $main-color;
+
+    @include breakpoints(mobile) {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}

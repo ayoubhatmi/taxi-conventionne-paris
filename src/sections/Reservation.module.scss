@@ -1,0 +1,59 @@
+@import "../scss/_colors.module.scss";
+@import "../scss/mixins";
+
+.reservation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 3rem 1.5rem;
+  width: 100%;
+  .desc {
+    @include breakpoints(large) {
+      max-width: 50%;
+    }
+
+    .title {
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: $main-color;
+      line-height: 1.1;
+
+      @include breakpoints(mobile) {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      @include breakpoints(large) {
+        line-height: normal;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+
+      span {
+        font-weight: 600;
+        color: $alt-color;
+      }
+    }
+
+    .btnLink {
+      font-weight: 500;
+      color: $main-color;
+      text-decoration: underline;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+
+  .imgContainer {
+    display: flex;
+    justify-content: center;
+    @include breakpoints(large) {
+      max-width: 50%;
+    }
+  }
+}
