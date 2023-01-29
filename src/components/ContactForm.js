@@ -11,15 +11,13 @@ const ContactForm = () => {
     emailjs
       .sendForm(
         "service_kc1tluh",
-        "template_8tkqyxf",
+        "template_lx2mbac",
         form.current,
         "4kfiq0uhTc98yr3UR"
       )
       .then(
         (result) => {},
-        (error) => {
-          console.log(error);
-        }
+        (error) => {}
       );
 
     e.target.reset();
