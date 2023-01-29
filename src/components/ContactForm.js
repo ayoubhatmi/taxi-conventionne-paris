@@ -67,7 +67,7 @@ const ContactForm = () => {
         required
       />
 
-      <select name="pets" id="pet-select" className="select">
+      <select name="freq-deplacement" id="freq-deplacement" className="select">
         <option value="">--Fréquence approximative des déplacements--</option>
         <option value="1">1 fois par semaine</option>
         <option value="2">2 fois par semaine</option>
@@ -81,7 +81,7 @@ const ContactForm = () => {
       <textarea
         cols="30"
         rows="10"
-        name="message"
+        name="typer-rendez-vous"
         placeholder="Type de rendez-vous Hospitalier :  Vous pouvez écrire ici le type de rendez vous. exemple : dialyse, chimiothérapie, radiothérapie, autres... "
       ></textarea>
 
