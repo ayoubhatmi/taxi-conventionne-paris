@@ -7,6 +7,9 @@
   flex-direction: column;
   text-align: center;
   padding: 3rem 0;
+  h2 {
+    margin-bottom: 2rem;
+  }
 
   .cardContainer {
     display: flex;
@@ -16,5 +19,27 @@
     gap: 1.5rem;
     margin-top: 1rem;
     max-width: 70%;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    padding: 2rem;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .map {
+      width: 100%;
+      aspect-ratio: 3/2;
+      object-fit: contain;
+    }
   }
 }

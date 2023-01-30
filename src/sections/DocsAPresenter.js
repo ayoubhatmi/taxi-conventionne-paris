@@ -7,7 +7,7 @@ const DocsAPresenter = () => {
       <ul className={styles.numberedList}>
         <li>Carte Vitale valide</li>
         <li>Bon de transport</li>
-        <li>Prescription médicale</li>
+        <li>Certificat de droit</li>
       </ul>
     </div>
   );

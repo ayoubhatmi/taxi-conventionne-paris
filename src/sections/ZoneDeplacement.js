@@ -1,16 +1,25 @@
-import SecteurCard from "../components/SecteurCard";
 import styles from "./ZoneDeplacement.module.scss";
-import DenisImg from "../../public/images/denis.jpeg";
-import ValDOiseImg from "../../public/images/val-d-oise.jpg";
-import YvelinesImg from "../../public/images/yvelines.jpg";
+import seineSaintDenis from "../../public/images/seine-saint-denis.svg";
+import valDOise from "../../public/images/val-d-oise.svg";
+import yvelines from "../../public/images/yvelines.svg";
+import Image from "next/image";
 const ZoneDeplacement = () => {
   return (
     <div className={styles.zoneDeplacement}>
       <h2>Notre zone de déplacement</h2>
       <div className={styles.cardContainer}>
-        <SecteurCard title={"Val d'oise"} image={ValDOiseImg} />
-        <SecteurCard title={"Sein Sent Denis"} image={DenisImg} />
-        <SecteurCard title={"Yvelines"} image={YvelinesImg} />
+        <div className={styles.card}>
+          <Image src={valDOise} className={styles.map} />
+          <h2>Val d'oise</h2>
+        </div>
+        <div className={styles.card}>
+          <Image src={seineSaintDenis} className={styles.map} />
+          <h2>Seine Saint Denis</h2>
+        </div>
+        <div className={styles.card}>
+          <Image src={yvelines} className={styles.map} />
+          <h2>Yvelines</h2>
+        </div>
       </div>
     </div>
   );
