@@ -1,12 +1,10 @@
-@import "../scss/_colors.module.scss";
+@use "../scss/index" as *;
 
 .zoneDeplacement {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @extend .center-vertically;
   text-align: center;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
+
   h2 {
     margin-bottom: 2rem;
   }

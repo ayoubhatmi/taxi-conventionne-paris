@@ -1,4 +1,4 @@
-@import "../scss/_colors.module.scss";
+@use "../scss/index" as *;
 
 .Infos {
   display: flex;

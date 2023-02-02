@@ -1,11 +1,7 @@
-@import "../scss/_colors.module.scss";
-@import "../scss/_mixins.scss";
+@use "../scss/index" as *;
 
 .reservastionForm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @extend .center-vertically;
   padding: 3rem 1rem;
   text-align: center;
   h2 {
