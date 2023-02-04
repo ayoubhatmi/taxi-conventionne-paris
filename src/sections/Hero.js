@@ -53,7 +53,7 @@ const Hero = () => {
         </Link>
       </div>
       <div className={Styles.imgContainer}>
-        <Image src={heroImg} alt="" className={"w-5.5/6"} />
+        <Image src={heroImg} alt="" className={"w-5.5/6"} priority="true" />
       </div>
     </motion.section>
   );

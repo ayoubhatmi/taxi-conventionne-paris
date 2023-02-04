@@ -9,15 +9,23 @@ const ZoneDeplacement = () => {
       <h2>Notre zone de déplacement</h2>
       <div className={styles.cardContainer}>
         <div className={styles.card}>
-          <Image src={valDOise} className={styles.map} />
+          <Image
+            src={valDOise}
+            className={styles.map}
+            alt="Map de Val d'oise"
+          />
           <h2>Val d'oise</h2>
         </div>
         <div className={styles.card}>
-          <Image src={seineSaintDenis} className={styles.map} />
+          <Image
+            src={seineSaintDenis}
+            className={styles.map}
+            alt="Map de Seine Saint Denis"
+          />
           <h2>Seine Saint Denis</h2>
         </div>
         <div className={styles.card}>
-          <Image src={yvelines} className={styles.map} />
+          <Image src={yvelines} className={styles.map} alt="Map de Yvelines" />
           <h2>Yvelines</h2>
         </div>
       </div>

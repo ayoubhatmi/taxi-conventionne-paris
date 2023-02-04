@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={Styles.Footer}>
       <p className={Styles.copyright}>
-        Taxiconventionneparis.com | tous droits réservés © 2023
+        Taxiparisienconventionne.fr | tous droits réservés © 2023
       </p>
     </footer>
   );

@@ -9,12 +9,17 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-white shadow">
-      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 p-1">
         <div>
           <div className="flex items-center justify-between py-2 md:py-2 md:block">
-            <a href="/">
-              <Image className="sm:w-2/4 w-5/6" src={logo} />
-            </a>
+            <Link to="/">
+              <Image
+                className="sm:w-2/4 w-5/6 cursor-pointer"
+                src={logo}
+                alt="Logo Taxi Parisien Conventionné"
+                priority="true"
+              />
+            </Link>
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
